@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+#page {
+    background-color: #EBEFF1;
+}
+
+/* ! home page */
+#home_page {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./assets/burgerWallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+nav {
+    height: 20vh;
+    display: flex;
+}
+
+#nav1 {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    height: 170px;
+    width: 240px;
+    color: white;
+}
+
+#nav2 {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
+    padding-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 550;
+    color: white;
+}
+
+#nav3 {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+}
+
+.fa-cart-shopping {
+    font-size: 25px;
+    font-weight: 550;
+    color: white;
+}
+
+#cart_items {
+    font-size: 10px;
+    background-color: white;
+    color: black;
+    height: 13px;
+    width: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 48px;
+    left: 85px;
+}
+
+#price {
+    font-size: 18px;
+    font-weight: 550;
+    color: white;
+}
+
+/* ! menu page */
+#menu_page1 {
+    width: 100vw;
+}
+
+#article1 {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#article2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+
+.card_container {
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    padding: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.15s 0s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.68);
+    border-radius: 10px
+}
+
+.card_container:hover {
+    scale: 0.96;
+}
+
+.food_img {
+    height: 150px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.food_title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.food_disc {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
+
+.price_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    width: 100%;
+}
+
+.food_quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.fa-circle-minus,
+.fa-circle-plus {
+    font-size: 15px;
+}
+
+/* ! menu page */
+#menu_page2 {
+    width: 100vw;
+}
+
+#menu1,
+#menu2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+
+.card_container {
+    background-color: white;
+}
+
+/* ! About page */
+#about_page {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./assets/about\ background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#about1 {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about1>h1 {
+    font-size: 40px;
+}
+
+#about2 {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 40px;
+}
+
+#about2>h3 {
+    font-size: 25px;
+}
+
+#about2>p {
+    color: rgb(193, 210, 210);
+    text-align: center;
+    font-style: italic;
+}
+
+#about3 {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 25px;
+}
+
+#aside_img {
+    flex-basis: 40%;
+}
+
+#aside_img>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    filter: brightness(1.5) contrast(1.2);
+    box-shadow: 5px 4px 10px rgba(255, 255, 255, 0.3);
+
+}
+
+#aside_img>img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.8);
+}
+
+#aside_p {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#aside_p>p {
+    color: rgb(193, 210, 210);
+    font-style: italic;
+}
+
+/* ! contact page */
+#contact_page {
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+}
+
+#contact_aside1 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact_aside1>h2 {
+    font-size: 30px;
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 40px;
+    font-weight: 800;
+}
+
+#contact_aside1>form {
+    flex-basis: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#contact_aside1>form>input {
+    width: 80%;
+    height: 10%;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+[type=submit] {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#contact_aside2 {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact_aside2>iframe {
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 70%;
+    width: 70%;
+    border: 1px solid black;
+}
+
+/*! footer  */
+footer {
+    height: 60vh;
+    background-color: black;
+    color: white;
+}
+
+#footer1 {
+    height: 85%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 0px 150px;
+}
+
+#aside1 {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    padding-top: 160px;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#aside1>p {
+    color: rgb(207, 202, 202);
+}
+
+#aside2 {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 25px;
+}
+
+#aside2>p {
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+    color: rgb(207, 202, 202);
+}
+
+#aside3 {
+    flex-basis: 35%;
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#aside3>p {
+    color: rgb(207, 202, 202);
+}
+
+#footer2 {
+    height: 15%;
+    display: flex;
+    background-color: rgb(2, 2, 53);
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Start of Responsive CSS for Mobile View --- */
+
+/* Utility for hiding elements on small screens (e.g., full navigation links) */
+.mobile-hidden {
+    display: none;
+}
+
+/* Add a class for a mobile menu icon (e.g., a hamburger icon) - assuming you have a corresponding element in HTML */
+.menu-icon {
+    display: none; /* Hidden by default on desktop */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* General Media Query for Screens up to 768px (Common tablet/mobile breakpoint) */
+@media screen and (max-width: 768px) {
+
+    /* ! Navigation Bar */
+    nav {
+        height: 15vh; /* Reduce height */
+        /* Change from flex to standard flow or adjust to accommodate a simpler layout */
+        /* Ensure nav covers 100% width, which it already does by default */
+    }
+    
+    #nav1 {
+        flex-basis: 50%; /* Give logo more space */
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    #logo {
+        height: 100px; /* Smaller logo */
+        width: 140px;
+    }
+
+    #nav2 {
+        /* Hide regular navigation links */
+        display: none;
+    }
+    
+    #nav3 {
+        flex-basis: 50%; /* Give nav3 remaining space */
+        justify-content: flex-end; /* Move cart/price to the right */
+        gap: 30px; /* Smaller gap */
+        padding-right: 20px;
+    }
+
+    .fa-cart-shopping {
+        font-size: 20px; /* Smaller icon */
+    }
+
+    #cart_items {
+        top: 30px; /* Adjust position for smaller nav */
+        left: initial; /* Remove fixed left position */
+        right: 18px; /* Position relative to the right */
+        height: 15px; 
+        width: 15px; 
+        font-size: 10px;
+    }
+
+    #price {
+        font-size: 16px; /* Smaller price text */
+    }
+    
+    .menu-icon {
+        display: block; /* Show the hamburger icon */
+        margin-right: 20px;
+    }
+
+
+    /* ! Menu Page - Article 2 (Card Container Group) */
+    #article2,
+    #menu1,
+    #menu2 {
+        flex-direction: column; /* Stack cards vertically */
+        margin: 20px 0; /* Reduce margins */
+        gap: 30px; /* Add space between stacked cards */
+    }
+
+    #article1>h1 {
+        font-size: 30px; /* Smaller title */
+    }
+
+    .card_container {
+        width: 85%; /* Make cards wider to fill the screen */
+        height: auto; /* Adjust height based on content */
+        padding: 20px 15px;
+    }
+
+
+    /* ! About Page */
+    #about_page {
+        height: auto; /* Allow content to dictate height */
+        padding-bottom: 30px;
+    }
+
+    #about1>h1 {
+        font-size: 30px; /* Smaller title */
+    }
+
+    #about2>h3 {
+        font-size: 20px; /* Smaller subtitle */
+    }
+
+    #about2 {
+        height: auto;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    #about3 {
+        height: auto;
+        flex-direction: column; /* Stack image and text vertically */
+        padding: 20px;
+    }
+
+    #aside_img,
+    #aside_p {
+        flex-basis: 100%; /* Take full width */
+    }
+    
+    #aside_img {
+        max-width: 90%; /* Constrain image width */
+        margin: 0 auto;
+    }
+
+    #aside_p {
+        padding: 0 10px;
+    }
+    
+    #aside_p>p {
+        text-align: center; /* Center text for better mobile readability */
+    }
+
+
+    /* ! Contact Page */
+    #contact_page {
+        height: auto; /* Allow content to dictate height */
+        flex-direction: column; /* Stack form and map vertically */
+    }
+
+    #contact_aside1,
+    #contact_aside2 {
+        flex-basis: 100%; /* Take full width */
+        padding: 20px 0;
+    }
+    
+    #contact_aside1>h2 {
+        font-size: 24px;
+        padding-top: 20px;
+    }
+
+    #contact_aside1>form>input {
+        width: 90%; /* Make form inputs wider */
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    #contact_aside2>iframe {
+        height: 300px; /* Fixed height for the map */
+        width: 90%; /* Make map wider */
+        margin-top: 20px;
+    }
+    
+    
+    /* ! Footer */
+    footer {
+        height: auto; /* Allow content to dictate height */
+        padding-bottom: 20px;
+    }
+
+    #footer1 {
+        height: auto;
+        flex-direction: column; /* Stack footer sections vertically */
+        padding: 0; /* Remove horizontal padding */
+        border: none;
+    }
+
+    #aside1,
+    #aside2,
+    #aside3 {
+        flex-basis: 100%; /* Take full width */
+        padding: 30px 20px; /* Adjust padding */
+        align-items: center; /* Center-align content */
+        text-align: center;
+    }
+    
+    #aside1>h3,
+    #aside2>h3,
+    #aside3>h3 {
+        text-align: center;
+    }
+
+    #aside2>p {
+        font-size: 24px; /* Slightly smaller icons */
+        gap: 20px;
+    }
+    
+    #footer2 {
+        height: 70px; /* Reduce height */
+        font-size: 14px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+}
+/* --- End of Responsive CSS --- */

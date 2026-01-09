@@ -1,0 +1,215 @@
+/* === Base Reset and Fonts === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* === Header === */
+  header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+  }
+  
+  /* === Navigation Bar === */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+  
+  nav aside {
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav aside:hover {
+    background-color: #444;
+  }
+  
+  nav i {
+    margin-left: 8px;
+  }
+  
+  /* === Sections === */
+  section {
+    padding: 40px 20px;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* === Article / Menu Grid === */
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* === Individual Item Card === */
+  aside {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  aside img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  aside h4 {
+    color: #ffcc00;
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  aside p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .fa-circle-plus,
+  .fa-circle-minus {
+    font-size: 1.4rem;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .fa-circle-plus {
+    color: #0f0;
+  }
+  
+  .fa-circle-minus {
+    color: #f00;
+  }
+  
+  /* === About Section === */
+  #about {
+    background-color: #1c1c1c;
+    text-align: center;
+  }
+  
+  #about h3 {
+    margin-top: 20px;
+    font-size: 1.4rem;
+  }
+  
+  /* === Contact Form === */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #e6b800;
+  }
+  
+  /* === Footer === */
+  footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* === Responsive Design === */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    article {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    aside {
+      width: 90%;
+    }
+  
+    section h2 {
+      font-size: 1.6rem;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    aside p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    nav aside {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    aside img {
+      height: 150px;
+    }
+  
+    input, textarea {
+      font-size: 0.9rem;
+    }
+  
+    header h1 {
+      font-size: 1.7rem;
+    }
+  
+    section h2 {
+      font-size: 1.3rem;
+    }
+  }
+  
