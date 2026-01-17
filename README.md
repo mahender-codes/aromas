@@ -1,4 +1,4 @@
-# Aromas Grill Master 🍽️
+# Aromas 🍽️
 
 A frontend restaurant website built using **HTML, CSS, and JavaScript**.  
 This project demonstrates menu display, cart functionality, and a table booking form with email notification.
